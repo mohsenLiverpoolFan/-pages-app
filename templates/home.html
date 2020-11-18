@@ -1,6 +1,6 @@
-
-    {% extends 'base.html' %}
-    {% block content %}
-
-    <h1>Homepage</h1>
-    {% endblock content %}
+<h1>Message board homepage</h1>
+<ul>
+{% for p in all_posts_list %}
+<li>{{ p.text }}</li>
+{% endfor %}
+</ul>
